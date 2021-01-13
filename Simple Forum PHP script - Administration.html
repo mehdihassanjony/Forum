@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0042)https://simpleforumphp.com/forum/admin.php -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Simple Forum PHP script - Administration</title>
+
+<script async="" src="./Simple Forum PHP script - Administration_files/c.js.download"></script><script type="text/javascript" src="./Simple Forum PHP script - Administration_files/prototype.js.download"></script>
+<script type="text/javascript" src="./Simple Forum PHP script - Administration_files/effects.js.download"></script>
+<script type="text/javascript" src="./Simple Forum PHP script - Administration_files/accordion.js.download"></script>
+<script language="javascript" src="./Simple Forum PHP script - Administration_files/functions.js.download"></script>
+<script language="javascript" src="./Simple Forum PHP script - Administration_files/color_pick.js.download"></script>
+<link href="./Simple Forum PHP script - Administration_files/admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="logo">
+	<div class="script_name">Simple Forum PHP Administration</div>
+	<div class="logout_button"><a href="https://simpleforumphp.com/forum/admin.php?act=logout"><img src="./Simple Forum PHP script - Administration_files/logout1.png" width="32" alt="Logout" border="0"></a></div>
+    <div class="clear"></div>
+</div>
+
+<div style="clear:both"></div>
+
+ 
+	
+
+<div class="menuButtons">
+    <div class="menuButton"><a class="selected" href="https://simpleforumphp.com/forum/admin.php?act=topics"><span>Topics</span></a></div>
+    <div class="menuButton"><a href="https://simpleforumphp.com/forum/admin.php?act=replies"><span>Replies</span></a></div>
+    <div class="menuButton"><a href="https://simpleforumphp.com/forum/admin.php?act=cats"><span>Categories</span></a></div>
+    <div class="menuButton"><a href="https://simpleforumphp.com/forum/admin.php?act=admin_options"><span>Options</span></a></div>
+    <div class="menuButton"><a href="https://simpleforumphp.com/forum/admin.php?act=html"><span>Put on WebPage</span></a></div>
+    <div class="clear"></div> 
+</div>
+
+<div class="admin_wrapper">
+
+	<div class="menuSubButton"><a class="selected" href="https://simpleforumphp.com/forum/admin.php?act=topics">Topics List</a></div>
+	<div class="menuSubButton"><a href="https://simpleforumphp.com/forum/preview.php" target="_blank">Forum Preview</a></div>
+	<div class="menuSubButton"><a href="https://simpleforumphp.com/forum/admin.php?act=rss">RSS feed</a></div>
+	<div class="clear"></div>   
+
+
+	    
+
+	<div class="pageDescr">Below is a list of the topics and you can edit and delete them. There are <strong style="font-size:16px">19</strong> topics with status "Posted".</div>
+    
+    <div class="searchForm">
+    <form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form" class="formStyle">
+      <input type="text" name="search" value="" class="searchfield" placeholder="Search for topic">
+      <input type="submit" value="Search" class="submitButton">
+    </form>
+    </div>
+    
+	<table border="0" cellspacing="0" cellpadding="8" class="allTables">
+  	  <tbody><tr>
+        <td class="headlist"><a href="https://simpleforumphp.com/forum/admin.php?act=topics&amp;orderType=ASC&amp;search=&amp;orderBy=topic_title">Title</a></td>
+        <td width="10%" class="headlist"><a href="https://simpleforumphp.com/forum/admin.php?act=topics&amp;orderType=ASC&amp;search=&amp;orderBy=cat_id">Category</a></td>
+        <td width="12%" class="headlist"><a href="https://simpleforumphp.com/forum/admin.php?act=topics&amp;orderType=ASC&amp;search=&amp;orderBy=publish_date">Date posted</a></td>
+        <td width="12%" class="headlist"><a href="https://simpleforumphp.com/forum/admin.php?act=topics&amp;orderType=ASC&amp;search=&amp;orderBy=topic_name">Name</a></td>
+        <td width="15%" class="headlist"><a href="https://simpleforumphp.com/forum/admin.php?act=topics&amp;orderType=ASC&amp;search=&amp;orderBy=topic_email">Email</a></td>
+        <td width="10%" class="headlist"><a href="https://simpleforumphp.com/forum/admin.php?act=topics&amp;orderType=ASC&amp;search=&amp;orderBy=status">Status</a></td>
+        <td width="7%" class="headlist"><a href="https://simpleforumphp.com/forum/admin.php?act=topics&amp;orderType=ASC&amp;search=&amp;orderBy=count">Replies</a></td>
+        <td width="6%" class="headlist"><a href="https://simpleforumphp.com/forum/admin.php?act=topics&amp;orderType=ASC&amp;search=&amp;orderBy=reviews">Views</a></td>
+        <td class="headlist" colspan="2">&nbsp;</td>
+  	  </tr>
+      
+  	      
+  	  <tr class="sticky">
+      	        <td class="bodylist sticky_title">How to increase Google Page Rank?</td>
+        <td class="bodylist">
+        	SEO optimization        
+        </td>
+        <td class="bodylist">Mar 14, 2010</td>
+        <td class="bodylist">shreyam</td>
+        <td class="bodylist">shreyam@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form1" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="37">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form1.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=37">7</a></td>
+        <td class="bodylist">25806</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=37" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=37" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr class="sticky">
+      	        <td class="bodylist sticky_title">How do I add a RSS feed? </td>
+        <td class="bodylist">
+        	Web Design        
+        </td>
+        <td class="bodylist">Feb 10, 2010</td>
+        <td class="bodylist">MakeItOnline</td>
+        <td class="bodylist">MakeItOnline@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form2" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="9">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form2.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=9">5</a></td>
+        <td class="bodylist">5204</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=9" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=9" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">How To get free access?</td>
+        <td class="bodylist">
+        	Internet        
+        </td>
+        <td class="bodylist">Oct 14, 2016</td>
+        <td class="bodylist">Kzuhyang</td>
+        <td class="bodylist">Kzuhyang@mail.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form3" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="809">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form3.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=809">0</a></td>
+        <td class="bodylist">835</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=809" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=809" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">What is AJAX - where and how to use it?</td>
+        <td class="bodylist">
+        	Web Design        
+        </td>
+        <td class="bodylist">May 30, 2013</td>
+        <td class="bodylist">Jeremy Thomps</td>
+        <td class="bodylist">jeremy@thomps.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form4" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="487">
+            <input type="hidden" name="topic_status" value="Hidden">
+            <select name="status" onchange="document.form4.submit()">
+                <option value="Posted">Posted</option>
+                <option value="Hidden" selected="selected">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=487">0</a></td>
+        <td class="bodylist">9511</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=487" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=487" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">what is web design ??</td>
+        <td class="bodylist">
+        	Web Design        
+        </td>
+        <td class="bodylist">Oct 20, 2011</td>
+        <td class="bodylist">kaushal</td>
+        <td class="bodylist">kaushal@eminentinfotechs.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form5" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="342">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form5.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=342">0</a></td>
+        <td class="bodylist">6512</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=342" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=342" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">What are your interests?</td>
+        <td class="bodylist">
+        	Other        
+        </td>
+        <td class="bodylist">Sep 4, 2011</td>
+        <td class="bodylist">abu</td>
+        <td class="bodylist">abu@bud.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form6" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="322">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form6.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=322">0</a></td>
+        <td class="bodylist">5964</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=322" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=322" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">What's your favorite song ever?</td>
+        <td class="bodylist">
+        	Other        
+        </td>
+        <td class="bodylist">Jan 22, 2011</td>
+        <td class="bodylist">12letters</td>
+        <td class="bodylist">admin@12letters.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form7" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="191">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form7.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=191">2</a></td>
+        <td class="bodylist">9239</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=191" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=191" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist closed_title">SEO for Flash sites</td>
+        <td class="bodylist">
+        	SEO optimization        
+        </td>
+        <td class="bodylist">Mar 12, 2010</td>
+        <td class="bodylist">blankeyecue</td>
+        <td class="bodylist">blankeyecue@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form8" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="36">
+            <input type="hidden" name="topic_status" value="Closed">
+            <select name="status" onchange="document.form8.submit()">
+                <option value="Posted">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed" selected="selected">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=36">4</a></td>
+        <td class="bodylist">14418</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=36" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=36" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">Difference b/w Forum and Blog</td>
+        <td class="bodylist">
+        	Internet        
+        </td>
+        <td class="bodylist">Mar 10, 2010</td>
+        <td class="bodylist">Kannaram</td>
+        <td class="bodylist">kanna.victory@gmail.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form9" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="29">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form9.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=29">5</a></td>
+        <td class="bodylist">15894</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=29" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=29" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">Spend for immortality?</td>
+        <td class="bodylist">
+        	Other        
+        </td>
+        <td class="bodylist">Mar 1, 2010</td>
+        <td class="bodylist">Jim Barghes</td>
+        <td class="bodylist">jimbarghes@bssmedia.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form10" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="15">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form10.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=15">0</a></td>
+        <td class="bodylist">7640</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=15" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=15" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">PHP</td>
+        <td class="bodylist">
+        	Web Design        
+        </td>
+        <td class="bodylist">Feb 20, 2010</td>
+        <td class="bodylist">sonal</td>
+        <td class="bodylist">panchalsonal18@gmail.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form11" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="19">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form11.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=19">0</a></td>
+        <td class="bodylist">5336</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=19" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=19" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">Does anybody know any Keyword Suggestion Tool</td>
+        <td class="bodylist">
+        	SEO optimization        
+        </td>
+        <td class="bodylist">Feb 10, 2010</td>
+        <td class="bodylist">icememory</td>
+        <td class="bodylist">icememory@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form12" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="12">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form12.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=12">0</a></td>
+        <td class="bodylist">3972</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=12" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=12" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">Do forums help?</td>
+        <td class="bodylist">
+        	Internet        
+        </td>
+        <td class="bodylist">Feb 10, 2010</td>
+        <td class="bodylist">samjones</td>
+        <td class="bodylist">samjones@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form13" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="11">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form13.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=11">8</a></td>
+        <td class="bodylist">3807</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=11" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=11" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">What is Keyword density?</td>
+        <td class="bodylist">
+        	SEO optimization        
+        </td>
+        <td class="bodylist">Feb 10, 2010</td>
+        <td class="bodylist">serina</td>
+        <td class="bodylist">serina@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form14" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="10">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form14.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=10">0</a></td>
+        <td class="bodylist">3086</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=10" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=10" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">What is off page optimization.</td>
+        <td class="bodylist">
+        	SEO optimization        
+        </td>
+        <td class="bodylist">Feb 10, 2010</td>
+        <td class="bodylist">kittukumar110</td>
+        <td class="bodylist">kittukumar110@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form15" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="8">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form15.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=8">0</a></td>
+        <td class="bodylist">3349</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=8" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=8" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">5 ways to improve your site</td>
+        <td class="bodylist">
+        	SEO optimization        
+        </td>
+        <td class="bodylist">Feb 10, 2010</td>
+        <td class="bodylist">joeypbg</td>
+        <td class="bodylist">joeypbg@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form16" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="7">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form16.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=7">0</a></td>
+        <td class="bodylist">3717</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=7" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=7" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">How you choose color scheme?</td>
+        <td class="bodylist">
+        	Web Design        
+        </td>
+        <td class="bodylist">Feb 10, 2010</td>
+        <td class="bodylist">Jani</td>
+        <td class="bodylist">Jani@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form17" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="6">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form17.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=6">4</a></td>
+        <td class="bodylist">3759</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=6" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=6" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist closed_title">Which software do u use to make LOGOs</td>
+        <td class="bodylist">
+        	Web Design        
+        </td>
+        <td class="bodylist">Feb 10, 2010</td>
+        <td class="bodylist">andyel</td>
+        <td class="bodylist">andyel@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form18" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="5">
+            <input type="hidden" name="topic_status" value="Closed">
+            <select name="status" onchange="document.form18.submit()">
+                <option value="Posted">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed" selected="selected">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=5">10</a></td>
+        <td class="bodylist">3061</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=5" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=5" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">Free Graphic Editor?</td>
+        <td class="bodylist">
+        	Web Design        
+        </td>
+        <td class="bodylist">Feb 10, 2010</td>
+        <td class="bodylist">ronin</td>
+        <td class="bodylist">ronin@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form19" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="4">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form19.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=4">0</a></td>
+        <td class="bodylist">3551</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=4" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=4" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">Is getting link from irrelevant site harmful?</td>
+        <td class="bodylist">
+        	SEO optimization        
+        </td>
+        <td class="bodylist">Feb 10, 2010</td>
+        <td class="bodylist">Waqyum</td>
+        <td class="bodylist">Waqyum@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form20" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="3">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form20.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=3">0</a></td>
+        <td class="bodylist">3183</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=3" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=3" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">Is twitter is useful in SEO? </td>
+        <td class="bodylist">
+        	SEO optimization        
+        </td>
+        <td class="bodylist">Feb 10, 2010</td>
+        <td class="bodylist">soney218</td>
+        <td class="bodylist">soney218@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form21" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="2">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form21.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=2">0</a></td>
+        <td class="bodylist">3230</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=2" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=2" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	      
+  	  <tr>
+      	        <td class="bodylist">Ways to improve keyword ranking</td>
+        <td class="bodylist">
+        	SEO optimization        
+        </td>
+        <td class="bodylist">Feb 10, 2010</td>
+        <td class="bodylist">joesmith</td>
+        <td class="bodylist">joesmith@member.com</td>
+        <td class="bodylist">
+        	<form action="https://simpleforumphp.com/forum/admin.php?act=topics" method="post" name="form22" class="formStyle">
+            <input type="hidden" name="act2" value="change_status_topics">
+            <input type="hidden" name="id" value="1">
+            <input type="hidden" name="topic_status" value="Posted">
+            <select name="status" onchange="document.form22.submit()">
+                <option value="Posted" selected="selected">Posted</option>
+                <option value="Hidden">Hidden</option>
+                <option value="Closed">Closed</option>
+            </select>
+            </form>	
+        </td>
+        <td class="bodylist"><a style="text-decoration:none" href="https://simpleforumphp.com/forum/admin.php?act=replies&amp;topic_id=1">0</a></td>
+        <td class="bodylist">3471</td>
+        <td class="bodylistAct"><a href="https://simpleforumphp.com/forum/admin.php?act=editTopic&amp;id=1" title="Edit"><img class="act" src="./Simple Forum PHP script - Administration_files/edit.png" alt="Edit"></a></td>
+        <td class="bodylistAct"><a class="delete" href="https://simpleforumphp.com/forum/admin.php?act=delTopic&amp;id=1" onclick="return confirm(&#39;Are you sure you want to delete it?&#39;);" title="DELETE"><img class="act" src="./Simple Forum PHP script - Administration_files/delete.png" alt="DELETE"></a></td>
+  	  </tr>
+  	    
+	  	  <tr>
+      	<td colspan="10" class="bottomlist"><div class="paging">Page: </div>
+		<div class="paging">1</div>      	</td>
+      </tr>
+		</tbody></table>
+
+
+	
+   
+
+</div>
+
+
+
+<div class="clearfooter"></div>
+<div class="divProfiAnts"> <a class="footerlink" href="http://simplephpscripts.com/" target="_blank">Product of ProfiAnts - SimplePHPscripts.com</a></div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['TyxoObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//s.tyxo.com/c.js','tx');
+tx('create', 'TX-91298');
+tx('pageview');
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Simple Forum PHP script - Administration_files/ga.js.download" type="text/javascript"></script><script async="" src="./Simple Forum PHP script - Administration_files/push"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2720936-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body></html>
